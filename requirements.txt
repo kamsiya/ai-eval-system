@@ -1,1 +1,2 @@
-# No external dependencies required.
+# Required only when running with --provider openai.
+openai>=2.0.0

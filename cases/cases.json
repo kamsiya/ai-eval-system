@@ -2,16 +2,22 @@
   {
     "id": "case_001",
     "input": "What is the capital of France?",
-    "expected_output": "Paris"
+    "expected_output": "Paris",
+    "scoring": "contains",
+    "tags": ["qa", "geography"]
   },
   {
     "id": "case_002",
     "input": "What is 2 + 2?",
-    "expected_output": "4"
+    "expected_output": "4",
+    "scoring": "contains",
+    "tags": ["math"]
   },
   {
     "id": "case_003",
     "input": "Complete the phrase: machine ____",
-    "expected_output": "learning"
+    "expected_output": "learning",
+    "scoring": "contains",
+    "tags": ["completion"]
   }
 ]

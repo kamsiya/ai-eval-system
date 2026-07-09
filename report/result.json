@@ -1,8 +1,17 @@
 {
+  "run": {
+    "id": "20260709T065155Z",
+    "created_at": "2026-07-09T06:51:55.294687+00:00",
+    "provider": "mock",
+    "model": "mock-v1",
+    "cases_path": "cases/cases.json"
+  },
   "summary": {
     "total_cases": 3,
     "passed": 3,
-    "average_score": 1.0
+    "failed": 0,
+    "average_score": 1.0,
+    "pass_rate": 1.0
   },
   "results": [
     {
@@ -10,21 +19,52 @@
       "input": "What is the capital of France?",
       "expected_output": "Paris",
       "actual_output": "Paris",
-      "score": 1
+      "score": 1,
+      "passed": true,
+      "scoring": "contains",
+      "reason": "expected text found in output",
+      "provider": "mock",
+      "model": "mock-v1",
+      "latency_ms": 0.07,
+      "error": null,
+      "tags": [
+        "qa",
+        "geography"
+      ]
     },
     {
       "id": "case_002",
       "input": "What is 2 + 2?",
       "expected_output": "4",
       "actual_output": "4",
-      "score": 1
+      "score": 1,
+      "passed": true,
+      "scoring": "contains",
+      "reason": "expected text found in output",
+      "provider": "mock",
+      "model": "mock-v1",
+      "latency_ms": 0.0,
+      "error": null,
+      "tags": [
+        "math"
+      ]
     },
     {
       "id": "case_003",
       "input": "Complete the phrase: machine ____",
       "expected_output": "learning",
       "actual_output": "learning",
-      "score": 1
+      "score": 1,
+      "passed": true,
+      "scoring": "contains",
+      "reason": "expected text found in output",
+      "provider": "mock",
+      "model": "mock-v1",
+      "latency_ms": 0.0,
+      "error": null,
+      "tags": [
+        "completion"
+      ]
     }
   ]
 }
